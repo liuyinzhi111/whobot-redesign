@@ -1,0 +1,212 @@
+/* ========== 容器 ========== */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+}
+
+/* ========== 呼吸光晕 ========== */
+.halo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border-radius: 9999px;
+  filter: blur(20px);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+.halo1 {
+  width: 240px;
+  height: 240px;
+  margin-left: -120px;
+  margin-top: -120px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.25) 0%, rgba(0, 212, 255, 0) 70%);
+  animation: haloBreath 3s ease-in-out infinite;
+}
+
+.halo2 {
+  width: 320px;
+  height: 320px;
+  margin-left: -160px;
+  margin-top: -160px;
+  background: radial-gradient(circle, rgba(0, 136, 255, 0.15) 0%, rgba(0, 136, 255, 0) 70%);
+  animation: haloBreath 3s ease-in-out 1.5s infinite;
+}
+
+@keyframes haloBreath {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+}
+
+/* ========== 声波竖条 ========== */
+.waveRing {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  pointer-events: none;
+}
+
+.waveBar {
+  position: absolute;
+  width: 2px;
+  border-radius: 2px;
+  background: rgba(0, 212, 255, 0.6);
+  left: 50%;
+  top: 50%;
+  transform-origin: center 80px;
+  animation: waveBarPulse 1.4s ease-in-out infinite;
+}
+
+.waveBar:nth-child(1) { transform: rotate(0deg) translateY(-80px); animation-delay: 0s; }
+.waveBar:nth-child(2) { transform: rotate(51.4deg) translateY(-80px); animation-delay: 0.2s; }
+.waveBar:nth-child(3) { transform: rotate(102.8deg) translateY(-80px); animation-delay: 0.4s; }
+.waveBar:nth-child(4) { transform: rotate(154.3deg) translateY(-80px); animation-delay: 0.6s; }
+.waveBar:nth-child(5) { transform: rotate(205.7deg) translateY(-80px); animation-delay: 0.8s; }
+.waveBar:nth-child(6) { transform: rotate(257.1deg) translateY(-80px); animation-delay: 1.0s; }
+.waveBar:nth-child(7) { transform: rotate(308.6deg) translateY(-80px); animation-delay: 1.2s; }
+
+@keyframes waveBarPulse {
+  0%, 100% { height: 8px; }
+  50% { height: 24px; }
+}
+
+/* ========== 头像中央 ========== */
+.avatarWrap {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 9999px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  background-image: linear-gradient(#0A0E27, #0A0E27), linear-gradient(135deg, #00D4FF, #00D4AA);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.avatar img,
+.avatar video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.avatarName {
+  font-size: 14px;
+  font-weight: 600;
+  color: #E8F4FF;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.avatarSub {
+  font-size: 12px;
+  color: rgba(232, 244, 255, 0.55);
+  text-align: center;
+}
+
+/* ========== 浮动语义标签 ========== */
+.tag {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: rgba(8, 28, 58, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 212, 255, 0.25);
+  font-size: 13px;
+  color: #E8F4FF;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(8px);
+  animation: tagEnter 0.5s ease-out forwards, tagFloat 6s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+.tag1 {
+  top: 8%;
+  left: 2%;
+  animation-delay: 0.3s, 0.8s;
+}
+
+.tag2 {
+  top: 8%;
+  right: 2%;
+  animation-delay: 0.8s, 1.3s;
+}
+
+.tag3 {
+  bottom: 12%;
+  left: 0%;
+  animation-delay: 1.3s, 1.8s;
+}
+
+.tag4 {
+  bottom: 12%;
+  right: 0%;
+  animation-delay: 1.8s, 2.3s;
+}
+
+.tagDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 9999px;
+  flex-shrink: 0;
+}
+
+.dotGreen {
+  background: #00D4AA;
+  animation: dotBlink 2s ease-in-out infinite;
+}
+
+.dotGold {
+  background: #FFB800;
+}
+
+.dotCyan {
+  background: #00D4FF;
+}
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+@keyframes tagEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tagFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
