@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
-import { Building2, Cpu, Users, Award, Check, Phone, Mail, MapPin } from "lucide-react"
+import { Building2, Cpu, Award, Check, Phone, Mail, MapPin } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "关于我们 · 呼波特 WhoBot",
@@ -151,7 +151,7 @@ export default function AboutPage() {
                   <h2 className="text-[1.25rem] font-bold text-[#1A1A1A]">核心技术优势</h2>
                 </div>
                 <p className="text-[0.875rem] text-[#555] leading-relaxed mb-6">
-                  通过大模型对话引擎和多模态决策系统，可处理提升300%的长对话，同时具备人类对话的习惯或技巧，例如主动引导对话、适时停顿、添加语气词、模拟真人语调等。当用户出现突然打断或思考暂停时，能识别对方表达不完整，不会出现"抢话""自顾自陈述""断章取义"等AI显著特征。
+                  通过大模型对话引擎和多模态决策系统，可处理提升300%的长对话，同时具备人类对话的习惯或技巧，例如主动引导对话、适时停顿、添加语气词、模拟真人语调等。当用户出现突然打断或思考暂停时，能识别对方表达不完整，不会出现「抢话」「自顾自陈述」「断章取义」等AI显著特征。
                 </p>
               </div>
 

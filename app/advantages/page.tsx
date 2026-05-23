@@ -62,7 +62,7 @@ export default function AdvantagesPage() {
                 >
                   <Cpu className="w-5 h-5 text-white" />
                 </div>
-                <span className="text-[1.05rem] font-bold text-[#1A1A1A]">不是"AI外呼"，而是"AI电话数字员工"</span>
+                <span className="text-[1.05rem] font-bold text-[#1A1A1A]">不是「AI外呼」，而是「AI电话数字员工」</span>
               </div>
               <p className="text-[0.875rem] text-[#555] leading-relaxed text-left">
                 从自动获取线索到完成转化，替代的是一个完整岗位而非单一动作。不只是拨号工具，而是帮你把事办了的可靠员工。
@@ -87,7 +87,7 @@ export default function AdvantagesPage() {
                   <h3 className="text-[1.25rem] font-bold text-[#1A1A1A]">极致拟人化</h3>
                 </div>
                 <p className="text-[0.875rem] text-[#555] leading-relaxed mb-5">
-                  95%用户误认为真人客服。支持主动引导对话、适时停顿、添加语气词、模拟真人语调。拥有情境记忆能力，客户说"我在开会"，AI会一小时后回拨。
+                  95%用户误认为真人客服。支持主动引导对话、适时停顿、添加语气词、模拟真人语调。拥有情境记忆能力，客户说「我在开会」，AI会一小时后回拨。
                 </p>
                 <div className="grid grid-cols-2 gap-3">
                   {[
@@ -119,7 +119,7 @@ export default function AdvantagesPage() {
                   <h3 className="text-[1.25rem] font-bold text-[#1A1A1A]">边说边做（跨系统操作）</h3>
                 </div>
                 <p className="text-[0.875rem] text-[#555] leading-relaxed mb-5">
-                  通话中实时完成跨系统操作：加微信、派单、录入CRM、发送资料。把"1次触达"真正做成"1次转化动作"，不只是找到人，而是帮你把事办了。
+                  通话中实时完成跨系统操作：加微信、派单、录入CRM、发送资料。把「1次触达」真正做成「1次转化动作」，不只是找到人，而是帮你把事办了。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {["加微信", "派单", "录入CRM", "发送资料"].map((tag) => (
@@ -177,7 +177,7 @@ export default function AdvantagesPage() {
                   ))}
                 </div>
                 <p className="text-[0.875rem] text-[#555] leading-relaxed">
-                  当用户出现突然打断或思考暂停时，能识别对方表达不完整，不会出现"抢话""自顾自陈述""断章取义"等AI显著特征。提升300%的长对话处理能力。
+                  当用户出现突然打断或思考暂停时，能识别对方表达不完整，不会出现「抢话」「自顾自陈述」「断章取义」等AI显著特征。提升300%的长对话处理能力。
                 </p>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function AdvantagesPage() {
                 全流程自动化闭环
               </h2>
               <p className="text-[0.9375rem] text-[#777]">
-                从线索获取到转化完成，7步自动执行。不只是"帮你找到人"，而是"帮你把事办了"。
+                从线索获取到转化完成，7步自动执行。不只是「帮你找到人」，而是「帮你把事办了」。
               </p>
             </div>
 
